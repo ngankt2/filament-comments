@@ -2,14 +2,13 @@
 
 namespace Parallax\FilamentComments\Livewire;
 
-use Filament\Forms;
-
+use Filament\Schemas\Schema;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
+use Filament\Forms;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;
-use Filament\Schemas\Schema;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Model;
 use Livewire\Component;
@@ -28,10 +27,10 @@ class CommentsComponent extends Component implements HasForms
         $this->form->fill();
     }
 
-    public function form(Schema $form): Schema
+    public function form(Schema $schema): Schema
     {
         if (!auth()->user()->can('create', config('filament-comments.comment_model'))) {
-            return $form;
+            return $schema;
         }
 
         if (config('filament-comments.editor') === 'markdown') {
@@ -49,8 +48,8 @@ class CommentsComponent extends Component implements HasForms
                 ->toolbarButtons(config('filament-comments.toolbar_buttons'));
         }
 
-        return $form
-            ->schema([
+        return $schema
+            ->components([
                 $editor,
             ])
             ->statePath('data');
