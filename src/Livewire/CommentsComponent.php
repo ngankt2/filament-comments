@@ -44,7 +44,6 @@ class CommentsComponent extends Component implements HasForms
                 ->hiddenLabel()
                 ->required()
                 ->placeholder(__('filament-comments::filament-comments.comments.placeholder'))
-                ->extraInputAttributes(['style' => 'min-height: 6rem'])
                 ->toolbarButtons(config('filament-comments.toolbar_buttons'));
         }
 

@@ -1,15 +1,15 @@
 {
-    "name": "parallax/filament-comments",
+    "name": "ngankt2/filament-comments",
     "description": "Add comments to your Filament Resources.",
     "keywords": [
         "parallax",
         "laravel",
         "filament-comments"
     ],
-    "homepage": "https://github.com/parallax/filament-comments",
+    "homepage": "https://github.com/ngankt2/filament-comments",
     "support": {
-        "issues": "https://github.com/parallax/filament-comments/issues",
-        "source": "https://github.com/parallax/filament-comments"
+        "issues": "https://github.com/ngankt2/filament-comments/issues",
+        "source": "https://github.com/ngankt2/filament-comments"
     },
     "license": "MIT",
     "authors": [
