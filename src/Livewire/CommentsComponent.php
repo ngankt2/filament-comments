@@ -5,7 +5,6 @@ namespace Parallax\FilamentComments\Livewire;
 use Filament\Schemas\Schema;
 use Filament\Forms\Components\MarkdownEditor;
 use Filament\Forms\Components\RichEditor;
-use Filament\Forms;
 use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Notifications\Notification;

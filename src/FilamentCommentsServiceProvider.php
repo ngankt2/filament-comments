@@ -5,14 +5,12 @@ namespace Parallax\FilamentComments;
 use Filament\Support\Assets\Asset;
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
-use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Parallax\FilamentComments\Livewire\CommentsComponent;
-use Parallax\FilamentComments\Models\FilamentComment;
 use Parallax\FilamentComments\Policies\FilamentCommentPolicy;
 
 class FilamentCommentsServiceProvider extends PackageServiceProvider

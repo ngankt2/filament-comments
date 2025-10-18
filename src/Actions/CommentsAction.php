@@ -5,7 +5,6 @@ namespace Parallax\FilamentComments\Actions;
 use Filament\Support\Enums\Width;
 use Filament\Actions\Action;
 use Illuminate\Contracts\View\View;
-use Parallax\FilamentComments\Models\FilamentComment;
 
 class CommentsAction extends Action
 {
